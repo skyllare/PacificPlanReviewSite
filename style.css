@@ -1349,10 +1349,10 @@ nav#navbar {
         gap: 30px;
     }
 
-    #billboard .banner-content,
-    #billboard .banner-image-wrap {
-        width: 100%;
+    .banner-image-wrap{
+        display: none;
     }
+
 }
 
 /* =========================================
@@ -1533,6 +1533,14 @@ nav#navbar {
 
     .contact-info-item strong {
         font-size: 15px;
+    }
+
+    .banner-image{
+        display:none;
+    }
+
+    .single-image{
+        display:none;
     }
 
 }
