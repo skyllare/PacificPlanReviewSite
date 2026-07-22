@@ -1286,3 +1286,253 @@ nav#navbar {
   }
 }
 
+#services .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+#services .grid .detail-entry {
+    width: 100%;
+}
+
+#services .grid figure {
+    margin: 0;
+    width: 100%;
+}
+
+#services .grid .banner-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+
+    border-radius: 15px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    #services .grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+
+#billboard .main-banner {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+#billboard .banner-content {
+    flex: 1;
+}
+
+#billboard .banner-image-wrap {
+    flex: 1;
+    margin: 0;
+}
+
+#billboard .banner-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    #billboard .main-banner {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    #billboard .banner-content,
+    #billboard .banner-image-wrap {
+        width: 100%;
+    }
+}
+
+/* =========================================
+   CONTACT POPUP
+========================================= */
+
+.contact-modal {
+    display: none;
+    position: fixed;
+    z-index: 99999;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.contact-modal.active {
+    display: flex;
+    opacity: 1;
+}
+
+.contact-modal-content {
+    position: relative;
+    width: 100%;
+    max-width: 550px;
+    background: #fff;
+    padding: 50px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+    transform: translateY(20px);
+    transition: transform 0.3s ease;
+}
+
+.contact-modal.active .contact-modal-content {
+    transform: translateY(0);
+}
+
+.contact-modal-close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: transparent;
+    font-size: 32px;
+    font-weight: 300;
+    color: #333;
+    cursor: pointer;
+    line-height: 1;
+    transition: color 0.2s ease;
+}
+
+.contact-modal-close:hover {
+    color: #999;
+}
+
+.contact-modal-header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.contact-modal-subtitle {
+    display: block;
+    margin-bottom: 10px;
+    font-family: 'Jost', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #999;
+}
+
+.contact-modal-header h2 {
+    margin: 0 0 15px;
+    font-family: 'Cormorant SC', serif;
+    font-size: 42px;
+    font-weight: 700;
+    color: #222;
+}
+
+.contact-modal-header p {
+    max-width: 430px;
+    margin: 0 auto;
+    font-family: 'Jost', sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #666;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-info-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background: #f7f7f7;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.contact-info-item:hover {
+    background: #eeeeee;
+    transform: translateX(5px);
+}
+
+.contact-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+    background: #222;
+    color: #fff;
+    font-size: 20px;
+}
+
+.contact-info-item span {
+    display: block;
+    margin-bottom: 4px;
+    font-family: 'Jost', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #999;
+}
+
+.contact-info-item strong {
+    display: block;
+    font-family: 'Jost', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    color: #222;
+}
+
+.contact-modal-footer {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.contact-modal-footer p {
+    margin: 0;
+    font-family: 'Jost', sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #888;
+}
+
+/* Mobile */
+@media screen and (max-width: 600px) {
+
+    .contact-modal {
+        padding: 15px;
+    }
+
+    .contact-modal-content {
+        padding: 40px 25px;
+    }
+
+    .contact-modal-header h2 {
+        font-size: 34px;
+    }
+
+    .contact-info-item {
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .contact-info-item strong {
+        font-size: 15px;
+    }
+
+}

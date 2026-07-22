@@ -19,14 +19,61 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@400;700&family=Jost:wght@300;400;700&display=swap" rel="stylesheet">
-
+		<link rel="stylesheet" 
+		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 		<!-- script
 		================================================== -->
 		<script src="js/modernizr.js"></script>
 
 
 	</head>
+<!-- Contact Popup -->
+<div id="contactModal" class="contact-modal">
+    <div class="contact-modal-content">
+        
+        <button class="contact-modal-close" aria-label="Close">&times;</button>
 
+        <div class="contact-modal-header">
+            <span class="contact-modal-subtitle">GET IN TOUCH</span>
+            <h2>Contact Us</h2>
+            <p>
+                Have questions about our third-party plan review services?
+                We're here to help your jurisdiction keep projects moving.
+            </p>
+        </div>
+
+        <div class="contact-info">
+
+            <a href="tel:15098007447" class="contact-info-item">
+                <div class="contact-icon">
+                    <i class="icon icon-phone"></i>
+                </div>
+                <div>
+                    <span>Call Us</span>
+                    <strong>(509) 800-7447</strong>
+                </div>
+            </a>
+
+            <a href="mailto:patrick@pacificplanreview.com" class="contact-info-item">
+                <div class="contact-icon">
+                    <i class="icon icon-email"></i>
+                </div>
+                <div>
+                    <span>Email Us</span>
+                    <strong>patrick@pacificplanreview.com</strong>
+                </div>
+            </a>
+
+        </div>
+
+        <div class="contact-modal-footer">
+            <p>
+                We look forward to discussing how we can support your plan review needs.
+            </p>
+        </div>
+
+    </div>
+</div>
 <body>
 
 <div id="header-wrap">
@@ -43,8 +90,7 @@
 							<ul class="menu-list">
 								<li class="menu-item active"><a href="#home" data-effect="Home">Home</a></li>
 								<li class="menu-item"><a href="#about" class="nav-link" data-effect="About">About Us</a></li>
-								<li class="menu-item"><a href="#services" class="nav-link" data-effect="Services">Works</a></li>
-								<li class="menu-item"><a href="#projects" class="nav-link" data-effect="Projects">Projects</a></li>
+								<li class="menu-item"><a href="#services" class="nav-link" data-effect="Services">Services</a></li>
 							</ul>
 
 							<div class="hamburger">
@@ -68,18 +114,25 @@
 </div><!--header-wrap-->
 
 <section id="billboard">
-	<div class="main-banner pattern-overlay">
-		<div class="banner-content" data-aos="fade-up">
-			<h3 class="banner-title">We are.</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam tincidunt quisque faucibus velit felis tincidunt. Turpis platea sed arcu aliquam lorem in. In ut mattis faucibus purus.</p>
-			<div class="btn-wrap">
-				<a href="#" class="btn-accent">Contact Us</a>
-			</div>
-		</div><!--banner-content-->
-		<figure>
-			<img src="images/house_plans.jpg" alt="banner" class="banner-image" width="999">
-		</figure> 
-	</div>
+    <div class="main-banner pattern-overlay">
+
+        <div class="banner-content" data-aos="fade-up">
+            <h3 class="banner-title">We are an independent plan reviewing service.</h3>
+
+            <p>
+                We provide independent, third-party plan review services to local jurisdictions, helping building departments manage plan review workloads, staffing shortages, and permit backlogs. Our team provides certified, licensed, and insured plan examination services without the overhead and long-term commitment associated with hiring additional in-house staff.
+            </p>
+
+            <div class="btn-wrap">
+                <a href="#" class="btn-accent">Contact Us</a>
+            </div>
+        </div><!--banner-content-->
+
+        <figure class="banner-image-wrap">
+            <img src="images/plans.jpg" alt="Plan review services" class="banner-image">
+        </figure>
+
+    </div>
 </section>
 
 <button id="scrollToTopBtn">Top</button>
@@ -91,20 +144,18 @@
 				<div class="company-detail">
 					<div class="grid">
 						<figure>
-							<img src="images/single-image.jpg" alt="book" class="single-image">
+							<img src="images/house_plans.jpg" alt="book" class="single-image">
 						</figure>
 						<div class="detail-entry" data-aos="fade-up">
 
 							<div class="section-header">
 								<h2 class="section-subtitle liner">About Us</h2>
-								<h3 class="section-title">We create beautiful design for good business</h3>
+								<h3 class="section-title">We help you meet your timelines</h3>
 							</div>
 
 							<div class="detail-wrap">
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam tincidunt quisque faucibus velit felis tincidunt. Turpis platea sed arcu aliquam lorem in. In ut mattis faucibus purus. Donec libero bibendum ut id risus, bibendum faucibus velit mattis diam etiam.</p>
-								<div class="btn-wrap">
-									<a href="#" class="btn-accent">Read More</a>
-								</div>
+								<p>Whether on a month-to-month or as needed basis, we can help you meet the UGA jurisdiction to issue permits within 90 days of application. With increasing pressure on jurisdictions to meet state-mandated permitting timelines, timely plan review is more important than ever. Our service provides a scalable solution that helps jurisdictions increase review capacity, reduce backlogs, and keep permit applications moving toward approval.</p>
+							
 							</div><!--description-->
 						</div>
 					</div><!--grid-->
@@ -115,75 +166,36 @@
 </section>
 
 <section id="services">
-	<div class="container">
-		<div class="row">
-			<div class="inner-content">
-				<div class="service-content">
-						<div class="grid">
-							<div class="detail-entry">
+    <div class="container">
+        <div class="row">
+            <div class="inner-content">
+                <div class="service-content">
 
-								<div class="section-header">
-									<h2 class="section-subtitle liner">Services</h2>
-									<h3 class="section-title">our abilities for solutions</h3>
-								</div>
+                    <div class="grid">
 
-								<div class="detail-wrap">
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam tincidunt quisque faucibus velit felis tincidunt. Turpis platea sed arcu aliquam lorem in. In ut mattis faucibus purus  donec libero bibendum ut id risus.</p>	
-									<div class="btn-wrap">
-										<a href="#" class="btn-accent">View All</a>
-									</div>
-								</div><!--detail-wrap-->								
-							</div>
+                        <div class="detail-entry">
+                            <div class="section-header">
+                                <h2 class="section-subtitle liner">Services</h2>
+                                <h3 class="section-title">Our Solution</h3>
+                            </div>
 
-							<div class="service-grid grid" data-aos="fade-up">
+                            <div class="detail-wrap">
+                                <p>
+                                    We provide remote third-party plan review services designed to help local jurisdictions maintain predictable permitting timelines and address plan review backlogs. Services are available through flexible month-to-month agreements or targeted backlog-clearing engagements, depending on the jurisdiction's needs. Our primary service commitment is a maximum 15-business-day plan review timeline, helping jurisdictions move applications through the review process efficiently and predictably.
+                                </p>
+                            </div>
+                        </div>
 
-								<div class="column odd-column">
-									<div class="icon-box">
-										<img src="images/camera.png" alt="branding">
-										<div class="title">Photography</div>
-									</div>
-									<div class="icon-box">
-										<img src="images/animation.png" alt="animation">
-										<div class="title">Animation</div>
-									</div>
-								</div>
+                        <figure>
+                            <img src="images/people.jpg" alt="Third-party plan review services" class="banner-image" width="600">
+                        </figure>
 
-								<div class="column">
-									<div class="icon-box">
-										<img src="images/branding.png" alt="branding">
-										<div class="title">Branding</div>
-									</div>
-									<div class="icon-box">
-										<img src="images/data-research.png" alt="animation">
-										<div class="title">Business plan</div>
-									</div>
-									<div class="icon-box">
-										<img src="images/seo.png" alt="animation">
-										<div class="title">Research</div>
-									</div>
-								</div>
+                    </div><!--grid-->
 
-								<div class="column odd-column">
-									<div class="icon-box">
-										<img src="images/code.png" alt="branding">
-										<div class="title">Development</div>
-									</div>
-									<div class="icon-box">
-										<img src="images/creative.png" alt="animation">
-										<div class="title">UI/UX design</div>
-									</div>
-								</div>
-
-
-							</div>
-
-							</div><!--grid-->
-						</div>
-
-				</div><!--inner-content-->
-			</div>
-		</div>
-	</div>
+                </div><!--service-content-->
+            </div><!--inner-content-->
+        </div>
+    </div>
 </section>
 <!---
 <section id="projects">
@@ -744,14 +756,11 @@
 										<a href="#">Home</a>
 									</li>
 									<li class="menu-item">
-										<a href="#">Services</a>
-									</li>
-									<li class="menu-item">
-										<a href="#">Staff</a>
-									</li>
-									<li class="menu-item">
 										<a href="#">About Us</a>
 									</li>	
+									<li class="menu-item">
+										<a href="#">Services</a>
+									</li>
 									<li class="menu-item">
 										<a href="#">Contact Us</a>
 									</li>								
@@ -759,7 +768,7 @@
 							</div>
 
 							<div class="footer-menu">
-								<h3>Any queries?</h3>
+								<h3>Any questions?</h3>
 								<ul class="menu-list">
 									<li class="menu-item">
 										<strong>Call Us</strong>
@@ -775,7 +784,7 @@
 							<div class="footer-item">
 								<h2>Got a project? 
 								Let’s talk.</h2>
-								<p>Whether you're ready to ... or have any questions, we are available to help.</p>
+								<p>Whether you're ready to address your plan review backlog, expand your review capacity, or have any questions, we are available to help.</p>
 								<div class="btn-wrap">
 									<a href="#" class="btn-accent">Contact us</a>
 								</div>
@@ -802,6 +811,56 @@
 	<script src="js/slideNav.min.js"></script>
 	<script src="js/slideNav.js"></script>
 	<script src="js/script.js"></script>	
-
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+		
+			const contactModal = document.getElementById('contactModal');
+			const closeButton = document.querySelector('.contact-modal-close');
+		
+			// Select all Contact Us / Let's Talk buttons
+			const contactButtons = document.querySelectorAll(
+				'.btn-accent, .btn-hvr-effect'
+			);
+		
+			// Open popup
+			contactButtons.forEach(function (button) {
+				const buttonText = button.textContent.trim().toLowerCase();
+		
+				if (
+					buttonText.includes('contact') ||
+					buttonText.includes("let's talk")
+				) {
+					button.addEventListener('click', function (event) {
+						event.preventDefault();
+						contactModal.classList.add('active');
+						document.body.style.overflow = 'hidden';
+					});
+				}
+			});
+		
+			// Close popup
+			function closeContactModal() {
+				contactModal.classList.remove('active');
+				document.body.style.overflow = '';
+			}
+		
+			closeButton.addEventListener('click', closeContactModal);
+		
+			// Close when clicking outside popup
+			contactModal.addEventListener('click', function (event) {
+				if (event.target === contactModal) {
+					closeContactModal();
+				}
+			});
+		
+			// Close with Escape key
+			document.addEventListener('keydown', function (event) {
+				if (event.key === 'Escape') {
+					closeContactModal();
+				}
+			});
+		
+		});
+		</script>
 </body>
 </html>	
